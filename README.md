@@ -57,13 +57,13 @@
 4. **Phân biệt: min-width, width, max-width**
 
    1. **min-width** được sử dụng để thiết lập chiều rộng nhỏ nhất cho một phần tử. Nó ngăn chặn chiều rộng của phần tử nhỏ hơn một giá trị được chỉ định.
-   2. **width thiết** lập chiều rộng cho thành phần.
+   2. **width** thiết lập chiều rộng cho thành phần.
    3. **max-width** được sử dụng để thiết lập chiều rộng lớn nhất cho một phần tử. Nó ngăn chặn chiều rộng của phần tử vượt quá một giá trị được chỉ định.
 
-5. **Phân biệt: \<ul> và \<ol>**
+5. **Phân biệt: `\<ul>` và `\<ol>`**
 
-   1. Thẻ \<ul> tạo danh sách không có thứ tự
-   2. Thẻ \<ol> tạo danh sách có thứ tự
+   1. Thẻ `\<ul>` tạo danh sách không có thứ tự
+   2. Thẻ `\<ol>` tạo danh sách có thứ tự
 
 6. **Phân biệt các giá trị của Position**
    1. **static**
@@ -73,10 +73,10 @@
       2. Với các giá trị khác ngoài static, chúng ta có thể dễ dàng thay đổi vị trí của chúng bằng các thuộc tính helper `top | right | bottom | left | z-index`.
    3. **Absolute**
       1. Sẽ dịch chuyển vị trí của nó tương ứng với thẻ cha của nó.
-      2. Một element được khai báo với thuộc tính position: absolute sẽ được loại bỏ khỏi luồng document (document flow). Vị trí mặc định của element sẽ là điểm bắt đầu (top-left) của element cha. Nếu nó không có bất cứ thẻ cha nào thì thẻ document \<html> sẽ là cha của nó.
+      2. Một element được khai báo với thuộc tính position: absolute sẽ được loại bỏ khỏi luồng document (document flow). Vị trí mặc định của element sẽ là điểm bắt đầu (top-left) của element cha. Nếu nó không có bất cứ thẻ cha nào thì thẻ document `\<html>` sẽ là cha của nó.
    4. **Fixed**
       1. Sẽ được loại bỏ khỏi document flow
-      2. Vị trí của chúng **CHỈ** tương quan với thẻ \<html>
+      2. Vị trí của chúng **CHỈ** tương quan với thẻ `\<html>`
       3. Chúng không bị ảnh hưởng bới scroll
    5. **Sticky**
       1. Là sự kết hợp của `position: relative` và `position: fixed`.
