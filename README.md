@@ -22,7 +22,25 @@
 
 ## JS
 
-1. Item 1
+1. <details><summary><b>Map, filter và reduce<b></summary>
+
+   1. **Map**
+      1. Xử lý từng biến trong một mảng theo cùng 1 cách, trả về các giá trị sau xử lý bằng đúng số lượng phần tử ban đầu
+      2. Hàm map() nhận vào 3 tham số (theo thứ tự):
+         1. Phần tử hiện tại của mảng.
+         2. Chỉ số của phần tử hiện tại trong mảng.
+         3. Mảng ban đầu.
+      3. ```javascript
+         let animal_names = animals.map((animal, index, animals) => {
+           return animal.name;
+         });
+         ```
+   2. **Block**
+      1. Luôn được xuống dòng và chiếm toàn bộ `width` nếu width không được set.
+   3. **Inline-block**
+      1. Sẽ được sắp xếp giống với kiểu `display: inline` nghĩa là các items sẽ được xếp cùng nhau trên một dòng . Tuy nhiên các items sẽ có thuộc tính của `display: block` như là có set `width, height, margin, padding` đủ 4 hướng.
+
+</details>
 2. Item 2
 3. Item 3
    1. Item 3a
@@ -76,7 +94,7 @@
 </details>
 
 6. <details><summary><b>Phân biệt các giá trị của Position<b></summary>
-  
+
    1. **Static**
       1. Là giá trị mặc định của position
    2. **Relative**
@@ -101,12 +119,12 @@
 </details>
 
 8. <details><summary><b>Overflow <b></summary>
-  
+
    1. **Text-overflow**
       1. `text-overflow: clip` đoạn văn bản overflow sẽ bị ẩn đi.
       2. `text-overflow: ellipsis` phần bị ẩn đi sẽ được thay thế bằng dấu '3 chấm'
    2. **Overflow**
-      1. `overflow: visible`  phần nội dung bị tràn không bị cắt đi và nội dung bị tràn ra sẽ ghi đè lên các phần tử khác.
+      1. `overflow: visible` phần nội dung bị tràn không bị cắt đi và nội dung bị tràn ra sẽ ghi đè lên các phần tử khác.
       2. `overflow: hidden` phần nội dung bị tràn ra bị cắt đi và phần nội dung đó sẽ bị ẩn đi.
       3. `overflow: scroll` phần nội dung bị tràn ra vẫn bị cắt đi, tuy nhiên trình duyệt sẽ có thêm thanh `scroll`, mình có thể kéo xem phần nội dung bị ẩn đi. Thanh `scroll` này được thêm vào cho cả chiều dọc và chiều ngang của phần tử.
       4. `overflow: auto` cũng giống như giá trị `scroll`, tuy nhiên thanh `scroll` sẽ được thêm vào khi cần thiết.
