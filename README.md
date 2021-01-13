@@ -30,7 +30,7 @@
 
 ## CSS
 
-1. **Phân biệt: display inline, block, inline-block**
+1. <details><summary>**Phân biệt: display inline, block, inline-block**</summary>
 
    1. **inline**
       1. Với kiểu này thì các item sẽ nằm trên cùng một dòng, ví dụ như \<span> . Nếu các items vượt quá độ dài của dòng thì item sẽ xuống dòng mới
@@ -40,6 +40,9 @@
       1. luôn được xuống dòng và chiếm toàn bộ width nếu width không được set.
    3. **inline-block**
       1. sẽ được sắp xếp giống với kiểu display: inline, nghĩa là các items sẽ được xếp cùng nhau trên một dòng . Tuy nhiên các items sẽ có thuộc tính của display: block như là có set width, height, margin, padding đủ 4 hướng.
+
+</details>
+   
 
 2. **Có bao nhiêu cách để ẩn 1 phần tử**
 
