@@ -69,7 +69,7 @@
 
 </details>
 
-5. <details><summary><b>Phân biệt: `\<ul>` và `\<ol>`<b></summary>
+5. <details><summary><b>Phân biệt: ul và ol<b></summary>
 
    1. Thẻ `\<ul>` tạo danh sách không có thứ tự
    2. Thẻ `\<ol>` tạo danh sách có thứ tự
