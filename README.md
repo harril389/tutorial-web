@@ -33,7 +33,7 @@
 1. <details><summary><b>Phân biệt: display inline, block, inline-block<b></summary>
 
    1. **Inline**
-      1. Với kiểu này thì các item sẽ nằm trên cùng một dòng, ví dụ như `\<span>` . Nếu các items vượt quá độ dài của dòng thì item sẽ xuống dòng mới
+      1. Với kiểu này thì các item sẽ nằm trên cùng một dòng, ví dụ như `<span>` . Nếu các items vượt quá độ dài của dòng thì item sẽ xuống dòng mới
       2. Các item có kiểu display này không thể set `width` và `height`.
       3. Các inline item sẽ chỉ có thể điều chỉnh `margin` và `padding` `left` và `right` (`top` và `bottom` thì không thể).
    2. **Block**
@@ -84,10 +84,10 @@
       2. Với các giá trị khác ngoài static, chúng ta có thể dễ dàng thay đổi vị trí của chúng bằng các thuộc tính helper `top | right | bottom | left | z-index`.
    3. **Absolute**
       1. Sẽ dịch chuyển vị trí của nó tương ứng với thẻ cha của nó.
-      2. Một element được khai báo với thuộc tính position: absolute sẽ được loại bỏ khỏi luồng document (document flow). Vị trí mặc định của element sẽ là điểm bắt đầu (top-left) của element cha. Nếu nó không có bất cứ thẻ cha nào thì thẻ document `\<html>` sẽ là cha của nó.
+      2. Một element được khai báo với thuộc tính position: absolute sẽ được loại bỏ khỏi luồng document (document flow). Vị trí mặc định của element sẽ là điểm bắt đầu (top-left) của element cha. Nếu nó không có bất cứ thẻ cha nào thì thẻ document `<html>` sẽ là cha của nó.
    4. **Fixed**
       1. Sẽ được loại bỏ khỏi document flow
-      2. Vị trí của chúng **CHỈ** tương quan với thẻ `\<html>`
+      2. Vị trí của chúng **CHỈ** tương quan với thẻ `<html>`
       3. Chúng không bị ảnh hưởng bới scroll
    5. **Sticky**
       1. Là sự kết hợp của `position: relative` và `position: fixed`.
