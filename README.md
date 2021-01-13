@@ -63,7 +63,21 @@
 
 </details>
 
-2. Item 2
+2. <details><summary><b>Xử lý chuỗi trong JS<b></summary>
+
+   1. **length**
+      1. Để lấy độ dài chuỗi.
+      2. ```javascript
+         string.length;
+         //string là tên biến chứa chuỗi.
+         ```
+   2. **Block**
+      1. Luôn được xuống dòng và chiếm toàn bộ `width` nếu width không được set.
+   3. **Inline-block**
+      1. Sẽ được sắp xếp giống với kiểu `display: inline` nghĩa là các items sẽ được xếp cùng nhau trên một dòng . Tuy nhiên các items sẽ có thuộc tính của `display: block` như là có set `width, height, margin, padding` đủ 4 hướng.
+
+</details>
+
 3. Item 3
    1. Item 3a
    2. Item 3b
