@@ -69,12 +69,72 @@
       1. Để lấy độ dài chuỗi.
       2. ```javascript
          string.length;
-         //string là tên biến chứa chuỗi.
+         //`string` là tên biến chứa chuỗi.
+         var a = "harrii";
+         a.length; //6
          ```
-   2. **Block**
-      1. Luôn được xuống dòng và chiếm toàn bộ `width` nếu width không được set.
-   3. **Inline-block**
-      1. Sẽ được sắp xếp giống với kiểu `display: inline` nghĩa là các items sẽ được xếp cùng nhau trên một dòng . Tuy nhiên các items sẽ có thuộc tính của `display: block` như là có set `width, height, margin, padding` đủ 4 hướng.
+   2. **indexOf()**
+      1. Phương thức này trả về vị trí của từ xuất hiện đầu tiên trong chuỗi, nếu trong chuỗi không có từ cần tìm thì nó sẽ trả về `-1`.
+      2. ```javascript
+         string.indexOf(keyword);
+         //`keyword` là từ khóa cần tìm trong chuỗi.
+         var a = "harrii";
+         a.indexOf("toidicode"); //2
+         ```
+   3. **lastIndexOf()**
+      1. Phương thức này cũng giống với phương thức `indexOf()` là tìm kiếm vị trí của chuỗi, nhưng hàm này sẽ trả về **vị trí cuối cùng của chuỗi xuất hiện** trong chuỗi cần tìm.
+      2. ```javascript
+         string.lastIndexOf(keyword);
+         //`keyword` là từ khóa cần tìm trong chuỗi.
+         var a = "harrii";
+         a.lastIndexOf("toidicode"); //3
+         ```
+   4. **Search()**
+      1. Hàm này giống như hàm `indexOf`.
+   5. **slice()**
+      1. Hàm này có tác dụng cắt ra một chuỗi con từ một chuỗi cha.
+      2. Vị trí của chuỗi được tính từ `0`.
+      3. Cắt chuỗi từ cuối về đầu. bằng việc thêm dấu `trừ` vào trước vị trí (tính từ cuối về đầu).
+      4. ```javascript
+         string.slice(begin, end);
+         //`begin` là vị trí bắt đầu cắt chuỗi
+         //`end` là vị trí kết thúc cắt chuỗi (nếu không điền thì là cắt đến hết chuỗi).
+         var a = "harrii";
+         a.slice(0, 3); //har
+         ```
+   6. **substring()**
+      1. Hàm này cũng tương tự như hàm `slice()`, nhưng hàm này không cho phép truyền vào số âm.
+   7. **substr()**
+      1. Phương thức này cũng có tác dụng là cắt chuỗi nhưng tham số thứ 2 của phương thức này có phần khác với 2 phương thức còn lại.
+      2. Vị trí của chuỗi được tính từ `0`.
+      3. ```javascript
+         string.substr(begin, length);
+         //`begin` là vị trí bắt đầu cắt chuỗi
+         //`length` là độ dài của chuỗi muốn cắt (tính từ điểm bắt đầu cắt).
+         ```
+   8. **replace()**
+      1. Phương thức này cho phép tìm kiếm và thay thế chuỗi.
+      2. ```javascript
+         string.replace(chuoicantim, chuoithaythe);
+         //`chuoicantim` là chuỗi cần tìm để thay thế.
+         //`chuoithaythe` là chuỗi thay thế.
+         var a = "harriwon";
+         a.replace("won", "i"); //harrii
+         ```
+   9. **toUpperCase()**
+      1. Phương thức này có tác dụng chuyển đổi chuỗi thành chữ in hoa.
+      2. ```javascript
+         string.toUppercase();
+         var a = "harrii";
+         a.toUpperCase(); //HARRII
+         ```
+   10. **toLowerCase()**
+   11. Phương thức này có tác dụng chuyển đổi chuỗi thành chuỗi thường.
+   12. ```javascript
+       string.toLowerCase();
+       var a = "HARRII";
+       a.toLowerCase(); //harrii
+       ```
 
 </details>
 
