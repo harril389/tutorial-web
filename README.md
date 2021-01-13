@@ -43,7 +43,6 @@
 
 </details>
 
-
 2. <details><summary><b>Có bao nhiêu cách để ẩn 1 phần tử<b></summary>
 
    1. clip-path: circle(0);
@@ -92,5 +91,26 @@
    5. **Sticky**
       1. Là sự kết hợp của `position: relative` và `position: fixed`.
       2. Khi scroll đến vị trí của nó sẽ giống hệt như `fixed` và khi scroll ra khỏi nó thì nó sẽ quay lại vị trí ban đầu dưới dạng `relative`.
+
+</details>
+
+7. <details><summary><b>nếu ảnh và text đang ở cùng 1 vị trí thì làm thế nào để chữ hiển thị lên ảnh. (ảnh và chữ là 2 phần tử khác nhau)<b></summary>
+   1. sử dụng thuộc tính z-index để set cho giá trị z-index của text lớn hơn giá trị z-index của ảnh
+
+</details>
+
+8. <details><summary><b>Overflow <b></summary>
+   1. **text-overflow**
+      1. `text-overflow: clip` đoạn văn bản overflow sẽ bị ẩn đi.
+      2. `text-overflow: ellipsis` phần bị ẩn đi sẽ được thay thế bằng dấu '3 chấm'
+   2. **overflow**
+      1. `overflow: visible`  phần nội dung bị tràn không bị cắt đi và nội dung bị tràn ra sẽ ghi đè lên các phần tử khác.
+      2. `overflow: hidden` phần nội dung bị tràn ra bị cắt đi và phần nội dung đó sẽ bị ẩn đi.
+      3. `overflow: scroll` phần nội dung bị tràn ra vẫn bị cắt đi, tuy nhiên trình duyệt sẽ có thêm thanh `scroll`, mình có thể kéo xem phần nội dung bị ẩn đi. Thanh `scroll` này được thêm vào cho cả chiều dọc và chiều ngang của phần tử.
+      4. `overflow: auto` cũng giống như giá trị `scroll`, tuy nhiên thanh `scroll` sẽ được thêm vào khi cần thiết.
+   3. **overflow-x**
+      1. Thuộc tính cho phép điều khiển nội dung bị tràn theo chiều ngang (nghĩa là bên trái `left` và bên phải `right` của phần tử). Tương tự thuộc tính `overflow`, thuộc tính `overflow-x` cũng có giá trị như `visible, hidden, auto, scroll`.
+   4. **overflow-y**
+      1. Thuộc tính cho phép điều khiển nội dung bị tràn theo chiều dọc (nghĩa là bên trên `top` và bên dưới `bottom` của phần tử). Tương tự thuộc tính `overflow`, thuộc tính `overflow-y` cũng có giá trị như `visible, hidden, auto, scroll`.
 
 </details>
