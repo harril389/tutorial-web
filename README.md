@@ -56,18 +56,18 @@
          ```
    2. ## **Filter**
 
-      1. Lấy các phần tử trong mảng theo một tiêu chuẩn nhất định
-      2. Hàm `Filter()` nhận vào 3 tham số (theo thứ tự):
-         - Phần tử hiện tại của mảng.
-         - Chỉ số của phần tử hiện tại trong mảng.
-         - Mảng ban đầu.
-      3. ```javascript
-         let small_animals = animals.filter((animal) => {
-           return animal.size === "small";
-         });
-         ```
+   1. Lấy các phần tử trong mảng theo một tiêu chuẩn nhất định
+   2. Hàm `Filter()` nhận vào 3 tham số (theo thứ tự):
+      - Phần tử hiện tại của mảng.
+      - Chỉ số của phần tử hiện tại trong mảng.
+      - Mảng ban đầu.
+   3. ```javascript
+      let small_animals = animals.filter((animal) => {
+        return animal.size === "small";
+      });
+      ```
 
-   3. ## **Reduce**
+   4. ## **Reduce**
 
       1. Hàm `reduce` sẽ biến đổi một mảng thành một giá trị đơn giản.
       2. Hàm `reduce` sẽ thực hiện một hàm được cung cấp cho mỗi giá trị của mảng, từ trái qua phải.
@@ -83,7 +83,7 @@
          }, 0);
          ```
 
-   4. ## **forEach()**
+   5. ## **forEach()**
 
       1. Phương thức `forEach()` sẽ thực thi một hàm khi duyệt qua từng phần tử của mảng.
       2. ```javascript
@@ -94,7 +94,7 @@
          // expected output: "c"
          ```
 
-   5. ## **find()**
+   6. ## **find()**
 
       1. Phương thức `find()` sẽ trả về giá trị đầu tiên tìm thấy ở trong mảng được cung cấp.
       2. ```javascript
@@ -104,7 +104,7 @@
          // expected output: 12
          ```
 
-   6. ## **push()**
+   7. ## **push()**
 
       1. Thêm một phần tử vào cuối mảng.
       2. ```javascript
@@ -112,7 +112,7 @@
          arr.push("JS"); //["Xử", "lý", "chuỗi", "trong", "JS"]
          ```
 
-   7. ## **pop()**
+   8. ## **pop()**
 
       1. Xóa đi phần tử cuối cùng trong mảng.
       2. ```javascript
@@ -120,7 +120,7 @@
          arr.pop("JS"); //["Xử", "lý", "chuỗi", "trong"]
          ```
 
-   8. ## **shift()**
+   9. ## **shift()**
 
       1. Xóa phần tử đầu tiên của mảng, sau đó dồn các phần tử phía sau xuống một bậc.
       2. ```javascript
@@ -128,15 +128,15 @@
          arr.shift(); //["lý", "chuỗi", "trong", "JS"]
          ```
 
-   9. ## **unshift()**
+   10. ## **unshift()**
 
-      1. Thêm một phần tử vào vị trí đầu tiên của mảng, đồng thời đẩy các phẩn từ phía sau lên một bậc.
-      2. ```javascript
-         var arr = ["lý", "chuỗi", "trong", "JS"];
-         arr.unshift("Xử"); //["Xử", "lý", "chuỗi", "trong", "JS"]
-         ```
+       1. Thêm một phần tử vào vị trí đầu tiên của mảng, đồng thời đẩy các phẩn từ phía sau lên một bậc.
+       2. ```javascript
+          var arr = ["lý", "chuỗi", "trong", "JS"];
+          arr.unshift("Xử"); //["Xử", "lý", "chuỗi", "trong", "JS"]
+          ```
 
-   10. ## **splice()**
+   11. ## **splice()**
 
        1. Thêm hoặc xóa các phần tử.
        2. Hàm `splice()` có ba tham số truyền vào:
@@ -148,7 +148,7 @@
           arr.splice(1, 2, "hihi"); //["Xử", "hihi", "trong", "JS"]
           ```
 
-   11. ## **sort()**
+   12. ## **sort()**
 
        1. Hàm này dùng để sắp xếp các phần tử trong mảng theo thứ tự chữ cái `alpha`.
        2. ```javascript
@@ -156,7 +156,7 @@
           arr.sort(); //["JS", "Xử", "chuỗi","lý", "trong"]
           ```
 
-   12. ## **reverse()**
+   13. ## **reverse()**
 
        1. Hàm đảo ngược các phẩn tử lại. Vị trí đầu sẽ được chuyển xuống cuối mảng và vị trí cuối mảng sẽ được chuyển lên đầu mảng.
        2. ```javascript
@@ -164,7 +164,7 @@
           arr.reverse(); //["JS", "trong", "chuỗi","lý", "Xử"]
           ```
 
-   13. ## **concat()**
+   14. ## **concat()**
 
        1. Hàm dùng để nối hai mảng với nhau và trả về một mảng gồm tổng số phần tử của hai mảng đó. (hàm này sẽ trả lại một bản sao của mảng sau khi đã thực hiện nối, không làm thay đổi mảng gọi nó).
        2. ```javascript
@@ -173,7 +173,7 @@
           var arr = arr1.concat(arr2); //["Xử", "lý", "chuỗi", "trong", "JS"]
           ```
 
-   14. ## **slice()**
+   15. ## **slice()**
 
        1. Hàm dùng để lấy một số phần tử con trong mảng.
        2. ```javascript
@@ -184,7 +184,7 @@
           //`end`: là vị trí kết thúc
           ```
 
-   15. ## **join()**
+   16. ## **join()**
 
        1. Tạo ra một chuỗi mới bằng cách nối tất cả các phần tử của mảng.
        2. ```javascript
@@ -197,8 +197,23 @@
 </details>
 
 2. <details><summary><b>Xử lý chuỗi trong JS<b></summary>
+   <details><summary><b>Menu<b></summary>
+     
+    1. [length](#length)
+    2. [indexOf()](#indexOf)
+    3. [lastIndexOf()](#lastIndexOf)
+    4. [Search()](#Search)
+    5. [slice()](#slice)
+    6. [substring()](#substring)
+    7. [substr()](#substr)
+    8. [replace()](#replace)
+    9. [toUpperCase()](#toUpperCase)
+    10. [toLowerCase()](#toLowerCase)
+    11. [split()](#split)
+    
+   </details>
 
-   1. **length**
+   1. ## **length**
       1. Để lấy độ dài chuỗi.
       2. ```javascript
          string.length;
@@ -206,7 +221,8 @@
          var a = "harrii";
          a.length; //6
          ```
-   2. **indexOf()**
+   2. ## **indexOf()**
+
       1. Phương thức này trả về vị trí của từ xuất hiện đầu tiên trong chuỗi, nếu trong chuỗi không có từ cần tìm thì nó sẽ trả về `-1`.
       2. ```javascript
          string.indexOf(keyword);
@@ -214,7 +230,9 @@
          var a = "harrii";
          a.indexOf("toidicode"); //2
          ```
-   3. **lastIndexOf()**
+
+   3. ## **lastIndexOf()**
+
       1. Phương thức này cũng giống với phương thức `indexOf()` là tìm kiếm vị trí của chuỗi, nhưng hàm này sẽ trả về **vị trí cuối cùng của chuỗi xuất hiện** trong chuỗi cần tìm.
       2. ```javascript
          string.lastIndexOf(keyword);
@@ -222,9 +240,13 @@
          var a = "harrii";
          a.lastIndexOf("toidicode"); //3
          ```
-   4. **Search()**
+
+   4. ## **Search()**
+
       1. Hàm này giống như hàm `indexOf`.
-   5. **slice()**
+
+   5. ## **slice()**
+
       1. Hàm này có tác dụng cắt ra một chuỗi con từ một chuỗi cha.
       2. Vị trí của chuỗi được tính từ `0`.
       3. Cắt chuỗi từ cuối về đầu. bằng việc thêm dấu `trừ` vào trước vị trí (tính từ cuối về đầu).
@@ -235,9 +257,13 @@
          var a = "harrii";
          a.slice(0, 3); //har
          ```
-   6. **substring()**
+
+   6. ## **substring()**
+
       1. Hàm này cũng tương tự như hàm `slice()`, nhưng hàm này không cho phép truyền vào số âm.
-   7. **substr()**
+
+   7. ## **substr()**
+
       1. Phương thức này cũng có tác dụng là cắt chuỗi nhưng tham số thứ 2 của phương thức này có phần khác với 2 phương thức còn lại.
       2. Vị trí của chuỗi được tính từ `0`.
       3. ```javascript
@@ -245,7 +271,9 @@
          //`begin` là vị trí bắt đầu cắt chuỗi
          //`length` là độ dài của chuỗi muốn cắt (tính từ điểm bắt đầu cắt).
          ```
-   8. **replace()**
+
+   8. ## **replace()**
+
       1. Phương thức này cho phép tìm kiếm và thay thế chuỗi.
       2. ```javascript
          string.replace(chuoicantim, chuoithaythe);
@@ -254,21 +282,26 @@
          var a = "harriwon";
          a.replace("won", "i"); //harrii
          ```
-   9. **toUpperCase()**
+
+   9. ## **toUpperCase()**
+
       1. Phương thức này có tác dụng chuyển đổi chuỗi thành chữ in hoa.
       2. ```javascript
          string.toUppercase();
          var a = "harrii";
          a.toUpperCase(); //HARRII
          ```
-   10. **toLowerCase()**
+
+   10. ## **toLowerCase()**
+
        1. Phương thức này có tác dụng chuyển đổi chuỗi thành chuỗi thường.
        2. ```javascript
           string.toLowerCase();
           var a = "HARRII";
           a.toLowerCase(); //harrii
           ```
-   11. **split()**
+
+   11. ## **split()**
        1. Phương thức `string.split()` sẽ phân tách một chuỗi thành một mảng dữ liệu dựa vào các kí tự phân cách trong chuỗi. Phương thức sẽ trả về một mảng mới.
        2. Nếu kí tự phân cách là một chuỗi rỗng, mỗi kí tự trong chuỗi sẽ được phân tách thành một phần tử của mảng.
        3. Phương thức `string.split()` sẽ không làm thay đổi chuỗi gốc ban đầu.
