@@ -34,12 +34,12 @@
 
    1. **Inline**
       1. Với kiểu này thì các item sẽ nằm trên cùng một dòng, ví dụ như `\<span>` . Nếu các items vượt quá độ dài của dòng thì item sẽ xuống dòng mới
-      2. Các item có kiểu display này không thể set width và height.
-      3. Các inline item sẽ chỉ có thể điều chỉnh margin và padding left and right (top và bottom thì không thể).
+      2. Các item có kiểu display này không thể set `width` và `height`.
+      3. Các inline item sẽ chỉ có thể điều chỉnh `margin` và `padding` `left` và `right` (`top` và `bottom` thì không thể).
    2. **Block**
-      1. luôn được xuống dòng và chiếm toàn bộ width nếu width không được set.
+      1. luôn được xuống dòng và chiếm toàn bộ `width` nếu width không được set.
    3. **Inline-block**
-      1. sẽ được sắp xếp giống với kiểu display: inline, nghĩa là các items sẽ được xếp cùng nhau trên một dòng . Tuy nhiên các items sẽ có thuộc tính của display: block như là có set width, height, margin, padding đủ 4 hướng.
+      1. sẽ được sắp xếp giống với kiểu `display: inline` nghĩa là các items sẽ được xếp cùng nhau trên một dòng . Tuy nhiên các items sẽ có thuộc tính của `display: block` như là có set `width, height, margin, padding` đủ 4 hướng.
 
 </details>
 
@@ -96,7 +96,7 @@
 </details>
 
 7. <details><summary><b>Nếu ảnh và text đang ở cùng 1 vị trí thì làm thế nào để chữ hiển thị lên ảnh. (ảnh và chữ là 2 phần tử khác nhau)<b></summary>
-   1. Sử dụng thuộc tính z-index để set cho giá trị z-index của text lớn hơn giá trị z-index của ảnh
+   1. Sử dụng thuộc tính `z-index` để set cho giá trị `z-index` của text lớn hơn giá trị `z-index` của ảnh
 
 </details>
 
