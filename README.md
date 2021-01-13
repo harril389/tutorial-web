@@ -22,7 +22,7 @@
 
 ## JS
 
-1. <details><summary><b>Map, filter và reduce<b></summary>
+1. <details><summary><b>Xử lý mảng trong JS<b></summary>
 
    1. **Map**
       1. Xử lý từng biến trong một mảng theo cùng 1 cách, trả về các giá trị sau xử lý bằng đúng số lượng phần tử ban đầu
@@ -60,6 +60,117 @@
            return (weight += animal.weight);
          }, 0);
          ```
+   4. **forEach()**
+      1. Hàm `reduce` sẽ biến đổi một mảng thành một giá trị đơn giản.
+      2. Hàm `reduce` sẽ thực hiện một hàm được cung cấp cho mỗi giá trị của mảng, từ trái qua phải.
+      3. Hàm sẽ trả về một kết quả được lưu trữ( tổng số hoặc kết quả tính toàn).
+      4. Hàm `reduce` sẽ không thực hiện hàm được cung cấp đối với các phần tử không có giá trị.
+      5. Hàm `reduce()` nhận vào 3 tham số (theo thứ tự):
+         - Tham số đầu tiên là giá trị khởi tạo. Ta cần set giá trị khởi tạo ở cuối hàm. Trong ví dụ dưới là `0`. Nó có thể là bất cứ giá trị nào.
+         - Tham số thứ 2 là phần tử hiện tại trong mảng.
+         - Tham số thứ 3 và 4 giống với 2 hàm kể trên.
+      6. ```javascript
+         let total_weight = animals.reduce((weight, animal, index, animals) => {
+           return (weight += animal.weight);
+         }, 0);
+         ```
+   5. **find()**
+      1. Hàm `reduce` sẽ biến đổi một mảng thành một giá trị đơn giản.
+      2. Hàm `reduce` sẽ thực hiện một hàm được cung cấp cho mỗi giá trị của mảng, từ trái qua phải.
+      3. Hàm sẽ trả về một kết quả được lưu trữ( tổng số hoặc kết quả tính toàn).
+      4. Hàm `reduce` sẽ không thực hiện hàm được cung cấp đối với các phần tử không có giá trị.
+      5. Hàm `reduce()` nhận vào 3 tham số (theo thứ tự):
+         - Tham số đầu tiên là giá trị khởi tạo. Ta cần set giá trị khởi tạo ở cuối hàm. Trong ví dụ dưới là `0`. Nó có thể là bất cứ giá trị nào.
+         - Tham số thứ 2 là phần tử hiện tại trong mảng.
+         - Tham số thứ 3 và 4 giống với 2 hàm kể trên.
+      6. ```javascript
+         let total_weight = animals.reduce((weight, animal, index, animals) => {
+           return (weight += animal.weight);
+         }, 0);
+         ```
+   6. **push()**
+      1. Thêm một phần tử vào cuối mảng.
+      2. ```javascript
+         var arr = ["Xử", "lý", "chuỗi", "trong"];
+         arr.push("JS"); //["Xử", "lý", "chuỗi", "trong", "JS"]
+         ```
+   7. **pop()**
+      1. Xóa đi phần tử cuối cùng trong mảng.
+      2. ```javascript
+         var arr = ["Xử", "lý", "chuỗi", "trong", "JS"];
+         arr.pop("JS"); //["Xử", "lý", "chuỗi", "trong"]
+         ```
+   8. **shift()**
+      1. Hàm xóa phần tử đầu tiên của mảng, sau đó dồn các phần tử phía sau xuống một bậc.
+      2. ```javascript
+         var arr = ["Xử", "lý", "chuỗi", "trong", "JS"];
+         arr.shift(); //["lý", "chuỗi", "trong", "JS"]
+         ```
+   9. **unshift()**
+      1. Thêm một phần tử vào vị trí đầu tiên của mảng, đồng thời đẩy các phẩn từ phía sau lên một bậc.
+      2. ```javascript
+         var arr = ["lý", "chuỗi", "trong", "JS"];
+         arr.unshift(); //["Xử", "lý", "chuỗi", "trong", "JS"]
+         ```
+   10. **splice()**
+       1. Thêm hoặc xóa các phần tử.
+       2. Hàm `splice()` có ba tham số truyền vào:
+          - `position_add` là vị trí sẽ thêm (vị trí đầu tiên là 0)
+          - `num_element_remove` là số phần tử sẽ xóa (bắt đầu từ `position_add`)
+          - `value1,` `value2,` .. là danh sách các phần tử sẽ được thêm vào sau khi tại vị trí `position_add` và sau khi remove `num_element_remove` phần tử.
+       3. ```javascript
+          var arr = ["Xử", "lý", "chuỗi", "trong", "JS"];
+          arr.splice(1, 2, "hihi"); //["Xử", "hihi", "trong", "JS"]
+          ```
+   11. **sort()**
+
+       1. Hàm này dùng để sắp xếp các phần tử trong mảng theo thứ tự chữ cái `alpha`.
+       2. ```javascript
+          var arr = ["Xử", "lý", "chuỗi", "trong", "JS"];
+          arr.sort(); //["JS", "Xử", "chuỗi","lý", "trong"]
+          ```
+
+   12. **reverse()**
+
+       1. Hàm đảo ngược các phẩn tử lại. Vị trí đầu sẽ được chuyển xuống cuối mảng và vị trí cuối mảng sẽ được chuyển lên đầu mảng.
+       2. ```javascript
+          var arr = ["Xử", "lý", "chuỗi", "trong", "JS"];
+          arr.reverse(); //["JS", "trong", "chuỗi","lý", "Xử"]
+          ```
+
+   13. **concat()**
+
+       1. Hàm dùng để nối hai mảng với nhau và trả về một mảng gồm tổng số phần tử của hai mảng đó. (hàm này sẽ trả lại một bản sao của mảng sau khi đã thực hiện nối, không làm thay đổi mảng gọi nó)
+       2. ```javascript
+          var arr1 = ["Xử", "lý", "chuỗi"];
+          var arr2 = ["trong", "JS"];
+          var arr = arr1.concat(arr2); //["Xử", "lý", "chuỗi", "trong", "JS"]
+          ```
+
+   14. **slice()**
+
+       1. Hàm dùng để lấy một số phần tử con trong mảng
+       2. ```javascript
+          var arr = ["Xử", "lý", "chuỗi", "trong", "JS"];
+          arr.slice(3, 5); //["trong", "JS"];
+          //slice(start, end)
+          //`start`: là vị trí bắt đầu
+          //`end`: là vị trí kết thúc
+          ```
+
+   15. **join()**
+
+       1. Tạo ra một chuỗi mới bằng cách nối tất cả các phần tử của mảng
+       2. ```javascript
+          var arr = ["Xử", "lý", "chuỗi", "trong", "JS"];
+          arr.join(); //"Xử,lý,chuỗi,trong,JS"
+          arr.join(""); //"XửlýchuỗitrongJS"
+          arr.join("-"); //Xử-lý-chuỗi-trong-JS"
+          ```
+
+       ```
+
+       ```
 
 </details>
 
@@ -144,7 +255,7 @@
           //`separator` là kí tự phân cách trong chuỗi, phương thức sẽ dựa vào kí tự này để phân tách chuỗi. Nếu không truyền vào, mảng trả về sẽ có một phần tử duy nhất có giá trị bằng chuỗi ban đầu. Nếu truyền vào một chuỗi rỗng, mỗi kí tự trong chuỗi sẽ là một phần tử của mảng trả về.
           //`limit` là tham số quy định số phần tử tối đa của mảng trả về. Nếu không được truyền vào thì phương thức sẽ lấy tất cả các phần tử có thể.
           var str = "Xử lý chuỗi trong JS";
-          str.split(" "); //['Xử', 'lý', 'chuỗi', 'trong', 'JS']
+          str.split(" "); //["Xử", "lý", "chuỗi", "trong", "JS"]
           ```
 
 </details>
