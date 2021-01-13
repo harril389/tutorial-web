@@ -42,9 +42,9 @@
       1. sẽ được sắp xếp giống với kiểu display: inline, nghĩa là các items sẽ được xếp cùng nhau trên một dòng . Tuy nhiên các items sẽ có thuộc tính của display: block như là có set width, height, margin, padding đủ 4 hướng.
 
 </details>
-   
 
-2. **Có bao nhiêu cách để ẩn 1 phần tử**
+
+2. <details><summary><b>Có bao nhiêu cách để ẩn 1 phần tử<b></summary>
 
    1. clip-path: circle(0);
    2. visibility: hidden;
@@ -52,23 +52,31 @@
    4. opacity: 0;
    5. position: absolute; top: -9999px; left: -9999px;
 
-3. **Phân biệt margin và padding**
+</details>
+
+3. <details><summary><b>Phân biệt margin và padding<b></summary>
 
    1. **Margin** là khoảng trống nằm giữa viền và phần tử tiếp theo
    2. **Padding**là khoảng trống nằm giữa nội dung và viền
 
-4. **Phân biệt: min-width, width, max-width**
+</details>
+
+4. <details><summary><b>*Phân biệt: min-width, width, max-width<b></summary>
 
    1. **min-width** được sử dụng để thiết lập chiều rộng nhỏ nhất cho một phần tử. Nó ngăn chặn chiều rộng của phần tử nhỏ hơn một giá trị được chỉ định.
    2. **width** thiết lập chiều rộng cho thành phần.
    3. **max-width** được sử dụng để thiết lập chiều rộng lớn nhất cho một phần tử. Nó ngăn chặn chiều rộng của phần tử vượt quá một giá trị được chỉ định.
 
-5. **Phân biệt: `\<ul>` và `\<ol>`**
+</details>
+
+5. <details><summary><b>Phân biệt: `\<ul>` và `\<ol>`<b></summary>
 
    1. Thẻ `\<ul>` tạo danh sách không có thứ tự
    2. Thẻ `\<ol>` tạo danh sách có thứ tự
 
-6. **Phân biệt các giá trị của Position**
+</details>
+
+6. <details><summary><b>Phân biệt các giá trị của Position<b></summary>
    1. **static**
       1. Là giá trị mặc định của position
    2. **Relative**
@@ -84,3 +92,5 @@
    5. **Sticky**
       1. Là sự kết hợp của `position: relative` và `position: fixed`.
       2. Khi scroll đến vị trí của nó sẽ giống hệt như `fixed` và khi scroll ra khỏi nó thì nó sẽ quay lại vị trí ban đầu dưới dạng `relative`.
+
+</details>
