@@ -36,6 +36,7 @@
          });
          ```
    2. **Filter**
+
       1. Lấy các phần tử trong mảng theo một tiêu chuẩn nhất định
       2. Hàm `Filter()` nhận vào 3 tham số (theo thứ tự):
          - Phần tử hiện tại của mảng.
@@ -46,7 +47,9 @@
            return animal.size === "small";
          });
          ```
+
    3. **Reduce**
+
       1. Hàm `reduce` sẽ biến đổi một mảng thành một giá trị đơn giản.
       2. Hàm `reduce` sẽ thực hiện một hàm được cung cấp cho mỗi giá trị của mảng, từ trái qua phải.
       3. Hàm sẽ trả về một kết quả được lưu trữ( tổng số hoặc kết quả tính toàn).
@@ -60,59 +63,62 @@
            return (weight += animal.weight);
          }, 0);
          ```
+
    4. **forEach()**
-      1. Hàm `reduce` sẽ biến đổi một mảng thành một giá trị đơn giản.
-      2. Hàm `reduce` sẽ thực hiện một hàm được cung cấp cho mỗi giá trị của mảng, từ trái qua phải.
-      3. Hàm sẽ trả về một kết quả được lưu trữ( tổng số hoặc kết quả tính toàn).
-      4. Hàm `reduce` sẽ không thực hiện hàm được cung cấp đối với các phần tử không có giá trị.
-      5. Hàm `reduce()` nhận vào 3 tham số (theo thứ tự):
-         - Tham số đầu tiên là giá trị khởi tạo. Ta cần set giá trị khởi tạo ở cuối hàm. Trong ví dụ dưới là `0`. Nó có thể là bất cứ giá trị nào.
-         - Tham số thứ 2 là phần tử hiện tại trong mảng.
-         - Tham số thứ 3 và 4 giống với 2 hàm kể trên.
-      6. ```javascript
-         let total_weight = animals.reduce((weight, animal, index, animals) => {
-           return (weight += animal.weight);
-         }, 0);
+
+      1. Phương thức `forEach()` sẽ thực thi một hàm khi duyệt qua từng phần tử của mảng.
+      2. ```javascript
+         const arr = ["a", "b", "c"];
+         arr.forEach((element) => console.log(element));
+         // expected output: "a"
+         // expected output: "b"
+         // expected output: "c"
          ```
+
    5. **find()**
-      1. Hàm `reduce` sẽ biến đổi một mảng thành một giá trị đơn giản.
-      2. Hàm `reduce` sẽ thực hiện một hàm được cung cấp cho mỗi giá trị của mảng, từ trái qua phải.
-      3. Hàm sẽ trả về một kết quả được lưu trữ( tổng số hoặc kết quả tính toàn).
-      4. Hàm `reduce` sẽ không thực hiện hàm được cung cấp đối với các phần tử không có giá trị.
-      5. Hàm `reduce()` nhận vào 3 tham số (theo thứ tự):
-         - Tham số đầu tiên là giá trị khởi tạo. Ta cần set giá trị khởi tạo ở cuối hàm. Trong ví dụ dưới là `0`. Nó có thể là bất cứ giá trị nào.
-         - Tham số thứ 2 là phần tử hiện tại trong mảng.
-         - Tham số thứ 3 và 4 giống với 2 hàm kể trên.
-      6. ```javascript
-         let total_weight = animals.reduce((weight, animal, index, animals) => {
-           return (weight += animal.weight);
-         }, 0);
+
+      1. Phương thức `find()` sẽ trả về giá trị đầu tiên tìm thấy ở trong mảng được cung cấp
+      2. ```javascript
+         const arr = [5, 12, 8, 130, 44];
+         const found = arr.find((element) => element > 10);
+         console.log(found);
+         // expected output: 12
          ```
+
    6. **push()**
+
       1. Thêm một phần tử vào cuối mảng.
       2. ```javascript
          var arr = ["Xử", "lý", "chuỗi", "trong"];
          arr.push("JS"); //["Xử", "lý", "chuỗi", "trong", "JS"]
          ```
+
    7. **pop()**
+
       1. Xóa đi phần tử cuối cùng trong mảng.
       2. ```javascript
          var arr = ["Xử", "lý", "chuỗi", "trong", "JS"];
          arr.pop("JS"); //["Xử", "lý", "chuỗi", "trong"]
          ```
+
    8. **shift()**
-      1. Hàm xóa phần tử đầu tiên của mảng, sau đó dồn các phần tử phía sau xuống một bậc.
+
+      1. Xóa phần tử đầu tiên của mảng, sau đó dồn các phần tử phía sau xuống một bậc.
       2. ```javascript
          var arr = ["Xử", "lý", "chuỗi", "trong", "JS"];
          arr.shift(); //["lý", "chuỗi", "trong", "JS"]
          ```
+
    9. **unshift()**
+
       1. Thêm một phần tử vào vị trí đầu tiên của mảng, đồng thời đẩy các phẩn từ phía sau lên một bậc.
       2. ```javascript
          var arr = ["lý", "chuỗi", "trong", "JS"];
          arr.unshift(); //["Xử", "lý", "chuỗi", "trong", "JS"]
          ```
+
    10. **splice()**
+
        1. Thêm hoặc xóa các phần tử.
        2. Hàm `splice()` có ba tham số truyền vào:
           - `position_add` là vị trí sẽ thêm (vị trí đầu tiên là 0)
@@ -122,6 +128,7 @@
           var arr = ["Xử", "lý", "chuỗi", "trong", "JS"];
           arr.splice(1, 2, "hihi"); //["Xử", "hihi", "trong", "JS"]
           ```
+
    11. **sort()**
 
        1. Hàm này dùng để sắp xếp các phần tử trong mảng theo thứ tự chữ cái `alpha`.
@@ -167,10 +174,6 @@
           arr.join(""); //"XửlýchuỗitrongJS"
           arr.join("-"); //Xử-lý-chuỗi-trong-JS"
           ```
-
-       ```
-
-       ```
 
 </details>
 
