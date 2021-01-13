@@ -135,6 +135,17 @@
           var a = "HARRII";
           a.toLowerCase(); //harrii
           ```
+   11. **split()**
+       1. Phương thức `string.split()` sẽ phân tách một chuỗi thành một mảng dữ liệu dựa vào các kí tự phân cách trong chuỗi. Phương thức sẽ trả về một mảng mới.
+       2. Nếu kí tự phân cách là một chuỗi rỗng, mỗi kí tự trong chuỗi sẽ được phân tách thành một phần tử của mảng.
+       3. Phương thức `string.split()` sẽ không làm thay đổi chuỗi gốc ban đầu.
+       4. ```javascript
+          string.split(separator, limit);
+          //`separator` là kí tự phân cách trong chuỗi, phương thức sẽ dựa vào kí tự này để phân tách chuỗi. Nếu không truyền vào, mảng trả về sẽ có một phần tử duy nhất có giá trị bằng chuỗi ban đầu. Nếu truyền vào một chuỗi rỗng, mỗi kí tự trong chuỗi sẽ là một phần tử của mảng trả về.
+          //`limit` là tham số quy định số phần tử tối đa của mảng trả về. Nếu không được truyền vào thì phương thức sẽ lấy tất cả các phần tử có thể.
+          var str = "Xử lý chuỗi trong JS";
+          str.split(" "); //['Xử', 'lý', 'chuỗi', 'trong', 'JS']
+          ```
 
 </details>
 
