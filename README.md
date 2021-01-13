@@ -28,6 +28,18 @@
     1. [Map](#map)
     2. [Filter](#filter)
     3. [Reduce](#reduce)
+    4. [forEach()](#map)
+    5. [find()](#filter)
+    6. [push()](#reduce)
+    7. [pop()](#map)
+    8. [shift()](#filter)
+    9. [unshift()](#reduce)
+    10. [splice()](#map)
+    11. [sort()](#filter)
+    12. [reverse()](#reduce)
+    13. [concat()](#map)
+    14. [slice()](#filter)
+    15. [join()](#reduce)
     
    </details>
      
@@ -55,7 +67,7 @@
          });
          ```
 
-   3. **Reduce**
+   3. ## **Reduce**
 
       1. Hàm `reduce` sẽ biến đổi một mảng thành một giá trị đơn giản.
       2. Hàm `reduce` sẽ thực hiện một hàm được cung cấp cho mỗi giá trị của mảng, từ trái qua phải.
@@ -71,7 +83,7 @@
          }, 0);
          ```
 
-   4. **forEach()**
+   4. ## **forEach()**
 
       1. Phương thức `forEach()` sẽ thực thi một hàm khi duyệt qua từng phần tử của mảng.
       2. ```javascript
@@ -82,7 +94,7 @@
          // expected output: "c"
          ```
 
-   5. **find()**
+   5. ## **find()**
 
       1. Phương thức `find()` sẽ trả về giá trị đầu tiên tìm thấy ở trong mảng được cung cấp.
       2. ```javascript
@@ -92,7 +104,7 @@
          // expected output: 12
          ```
 
-   6. **push()**
+   6. ## **push()**
 
       1. Thêm một phần tử vào cuối mảng.
       2. ```javascript
@@ -100,7 +112,7 @@
          arr.push("JS"); //["Xử", "lý", "chuỗi", "trong", "JS"]
          ```
 
-   7. **pop()**
+   7. ## **pop()**
 
       1. Xóa đi phần tử cuối cùng trong mảng.
       2. ```javascript
@@ -108,7 +120,7 @@
          arr.pop("JS"); //["Xử", "lý", "chuỗi", "trong"]
          ```
 
-   8. **shift()**
+   8. ## **shift()**
 
       1. Xóa phần tử đầu tiên của mảng, sau đó dồn các phần tử phía sau xuống một bậc.
       2. ```javascript
@@ -116,7 +128,7 @@
          arr.shift(); //["lý", "chuỗi", "trong", "JS"]
          ```
 
-   9. **unshift()**
+   9. ## **unshift()**
 
       1. Thêm một phần tử vào vị trí đầu tiên của mảng, đồng thời đẩy các phẩn từ phía sau lên một bậc.
       2. ```javascript
@@ -124,7 +136,7 @@
          arr.unshift("Xử"); //["Xử", "lý", "chuỗi", "trong", "JS"]
          ```
 
-   10. **splice()**
+   10. ## **splice()**
 
        1. Thêm hoặc xóa các phần tử.
        2. Hàm `splice()` có ba tham số truyền vào:
@@ -136,7 +148,7 @@
           arr.splice(1, 2, "hihi"); //["Xử", "hihi", "trong", "JS"]
           ```
 
-   11. **sort()**
+   11. ## **sort()**
 
        1. Hàm này dùng để sắp xếp các phần tử trong mảng theo thứ tự chữ cái `alpha`.
        2. ```javascript
@@ -144,7 +156,7 @@
           arr.sort(); //["JS", "Xử", "chuỗi","lý", "trong"]
           ```
 
-   12. **reverse()**
+   12. ## **reverse()**
 
        1. Hàm đảo ngược các phẩn tử lại. Vị trí đầu sẽ được chuyển xuống cuối mảng và vị trí cuối mảng sẽ được chuyển lên đầu mảng.
        2. ```javascript
@@ -152,7 +164,7 @@
           arr.reverse(); //["JS", "trong", "chuỗi","lý", "Xử"]
           ```
 
-   13. **concat()**
+   13. ## **concat()**
 
        1. Hàm dùng để nối hai mảng với nhau và trả về một mảng gồm tổng số phần tử của hai mảng đó. (hàm này sẽ trả lại một bản sao của mảng sau khi đã thực hiện nối, không làm thay đổi mảng gọi nó).
        2. ```javascript
@@ -161,7 +173,7 @@
           var arr = arr1.concat(arr2); //["Xử", "lý", "chuỗi", "trong", "JS"]
           ```
 
-   14. **slice()**
+   14. ## **slice()**
 
        1. Hàm dùng để lấy một số phần tử con trong mảng.
        2. ```javascript
@@ -172,7 +184,7 @@
           //`end`: là vị trí kết thúc
           ```
 
-   15. **join()**
+   15. ## **join()**
 
        1. Tạo ra một chuỗi mới bằng cách nối tất cả các phần tử của mảng.
        2. ```javascript
