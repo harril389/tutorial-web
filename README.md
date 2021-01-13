@@ -37,9 +37,9 @@
       2. Các item có kiểu display này không thể set `width` và `height`.
       3. Các inline item sẽ chỉ có thể điều chỉnh `margin` và `padding` `left` và `right` (`top` và `bottom` thì không thể).
    2. **Block**
-      1. luôn được xuống dòng và chiếm toàn bộ `width` nếu width không được set.
+      1. Luôn được xuống dòng và chiếm toàn bộ `width` nếu width không được set.
    3. **Inline-block**
-      1. sẽ được sắp xếp giống với kiểu `display: inline` nghĩa là các items sẽ được xếp cùng nhau trên một dòng . Tuy nhiên các items sẽ có thuộc tính của `display: block` như là có set `width, height, margin, padding` đủ 4 hướng.
+      1. Sẽ được sắp xếp giống với kiểu `display: inline` nghĩa là các items sẽ được xếp cùng nhau trên một dòng . Tuy nhiên các items sẽ có thuộc tính của `display: block` như là có set `width, height, margin, padding` đủ 4 hướng.
 
 </details>
 
@@ -56,7 +56,7 @@
 3. <details><summary><b>Phân biệt margin và padding<b></summary>
 
    1. **Margin** là khoảng trống nằm giữa viền và phần tử tiếp theo
-   2. **Padding**là khoảng trống nằm giữa nội dung và viền
+   2. **Padding** là khoảng trống nằm giữa nội dung và viền
 
 </details>
 
