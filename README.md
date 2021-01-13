@@ -30,7 +30,7 @@
 
 ## CSS
 
-1. <details><summary>**Phân biệt: display inline, block, inline-block**</summary>
+1. <details><summary><h3>Phân biệt: display inline, block, inline-block<h3></summary>
 
    1. **inline**
       1. Với kiểu này thì các item sẽ nằm trên cùng một dòng, ví dụ như \<span> . Nếu các items vượt quá độ dài của dòng thì item sẽ xuống dòng mới
