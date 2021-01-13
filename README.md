@@ -7,8 +7,8 @@
 </div>
 ## Tables
 
-| STT  |  | description |  |
-| ------------- |:-------------:|:-------------:|
-| left foo      | right foo     |
-| left bar      | right bar     |
-| left baz      | right baz     |
+| STT | Right columns |description|detail|
+| ------------- |:-------------:|:-------------:|:-------------:|
+| 1      | right foo     |
+| 1      | right bar     |
+| 1     | right bazsda     |asdasdasd|
