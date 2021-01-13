@@ -32,7 +32,7 @@
 
 1. **Phân biệt: display inline, block, inline-block**
    1. **inline**
-      1. Với kiểu này thì các item sẽ nằm trên cùng một dòng, ví dụ như <span> . Nếu các items vượt quá độ dài của dòng thì item sẽ xuống dòng mới
+      1. Với kiểu này thì các item sẽ nằm trên cùng một dòng, ví dụ như \<span> . Nếu các items vượt quá độ dài của dòng thì item sẽ xuống dòng mới
       2. Các item có kiểu display này không thể set width và height.
       3. Các inline item sẽ chỉ có thể điều chỉnh margin và padding left and right (top và bottom thì không thể).
    2. **block**
@@ -52,6 +52,6 @@
    1. **min-width** được sử dụng để thiết lập chiều rộng nhỏ nhất cho một phần tử. Nó ngăn chặn chiều rộng của phần tử nhỏ hơn một giá trị được chỉ định.
    2. **width thiết** lập chiều rộng cho thành phần.
    3. **max-width** được sử dụng để thiết lập chiều rộng lớn nhất cho một phần tử. Nó ngăn chặn chiều rộng của phần tử vượt quá một giá trị được chỉ định.
-5. **Phân biệt: <ul> và <ol>**
-   1. Thẻ <ul> tạo danh sách không có thứ tự
-   2. Thẻ <ol> tạo danh sách có thứ tự
+5. **Phân biệt: \<ul> và \<ol>**
+   1. Thẻ \<ul> tạo danh sách không có thứ tự
+   2. Thẻ \<ol> tạo danh sách có thứ tự
