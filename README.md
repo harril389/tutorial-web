@@ -61,7 +61,7 @@
 
 </details>
 
-4. <details><summary><b>*Phân biệt: min-width, width, max-width<b></summary>
+4. <details><summary><b>Phân biệt: min-width, width, max-width<b></summary>
 
    1. **min-width** được sử dụng để thiết lập chiều rộng nhỏ nhất cho một phần tử. Nó ngăn chặn chiều rộng của phần tử nhỏ hơn một giá trị được chỉ định.
    2. **width** thiết lập chiều rộng cho thành phần.
