@@ -55,16 +55,16 @@
 
 3. <details><summary><b>Phân biệt margin và padding<b></summary>
 
-   1. **Margin** là khoảng trống nằm giữa viền và phần tử tiếp theo
-   2. **Padding** là khoảng trống nằm giữa nội dung và viền
+   1. `Margin` là khoảng trống nằm giữa viền và phần tử tiếp theo
+   2. `Padding` là khoảng trống nằm giữa nội dung và viền
 
 </details>
 
 4. <details><summary><b>Phân biệt: min-width, width, max-width<b></summary>
 
-   1. **Min-width** được sử dụng để thiết lập chiều rộng nhỏ nhất cho một phần tử. Nó ngăn chặn chiều rộng của phần tử nhỏ hơn một giá trị được chỉ định.
-   2. **Width** thiết lập chiều rộng cho thành phần.
-   3. **Max-width** được sử dụng để thiết lập chiều rộng lớn nhất cho một phần tử. Nó ngăn chặn chiều rộng của phần tử vượt quá một giá trị được chỉ định.
+   1. `Min-width` được sử dụng để thiết lập chiều rộng nhỏ nhất cho một phần tử. Nó ngăn chặn chiều rộng của phần tử nhỏ hơn một giá trị được chỉ định.
+   2. `Width` thiết lập chiều rộng cho thành phần.
+   3. `Max-width` được sử dụng để thiết lập chiều rộng lớn nhất cho một phần tử. Nó ngăn chặn chiều rộng của phần tử vượt quá một giá trị được chỉ định.
 
 </details>
 
