@@ -32,7 +32,7 @@
     1. luôn được xuống dòng và chiếm toàn bộ width nếu width không được set.
   3. **inline-block**
     1. sẽ được sắp xếp giống với kiểu display: inline, nghĩa là các items sẽ được xếp cùng nhau trên một dòng . Tuy nhiên các items sẽ có thuộc tính của display: block như là có set width, height, margin, padding đủ 4 hướng.
-1. Item 2
-1. Item 3
+2. Item 2
+3. Item 3
   1. Item 3a
   1. Item 3b
