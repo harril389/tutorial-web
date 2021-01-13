@@ -114,7 +114,7 @@
       1. Thêm một phần tử vào vị trí đầu tiên của mảng, đồng thời đẩy các phẩn từ phía sau lên một bậc.
       2. ```javascript
          var arr = ["lý", "chuỗi", "trong", "JS"];
-         arr.unshift(); //["Xử", "lý", "chuỗi", "trong", "JS"]
+         arr.unshift("Xử"); //["Xử", "lý", "chuỗi", "trong", "JS"]
          ```
 
    10. **splice()**
