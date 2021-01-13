@@ -77,7 +77,7 @@
 
    5. **find()**
 
-      1. Phương thức `find()` sẽ trả về giá trị đầu tiên tìm thấy ở trong mảng được cung cấp
+      1. Phương thức `find()` sẽ trả về giá trị đầu tiên tìm thấy ở trong mảng được cung cấp.
       2. ```javascript
          const arr = [5, 12, 8, 130, 44];
          const found = arr.find((element) => element > 10);
@@ -121,8 +121,8 @@
 
        1. Thêm hoặc xóa các phần tử.
        2. Hàm `splice()` có ba tham số truyền vào:
-          - `position_add` là vị trí sẽ thêm (vị trí đầu tiên là 0)
-          - `num_element_remove` là số phần tử sẽ xóa (bắt đầu từ `position_add`)
+          - `position_add` là vị trí sẽ thêm (vị trí đầu tiên là 0).
+          - `num_element_remove` là số phần tử sẽ xóa (bắt đầu từ `position_add`).
           - `value1,` `value2,` .. là danh sách các phần tử sẽ được thêm vào sau khi tại vị trí `position_add` và sau khi remove `num_element_remove` phần tử.
        3. ```javascript
           var arr = ["Xử", "lý", "chuỗi", "trong", "JS"];
@@ -147,7 +147,7 @@
 
    13. **concat()**
 
-       1. Hàm dùng để nối hai mảng với nhau và trả về một mảng gồm tổng số phần tử của hai mảng đó. (hàm này sẽ trả lại một bản sao của mảng sau khi đã thực hiện nối, không làm thay đổi mảng gọi nó)
+       1. Hàm dùng để nối hai mảng với nhau và trả về một mảng gồm tổng số phần tử của hai mảng đó. (hàm này sẽ trả lại một bản sao của mảng sau khi đã thực hiện nối, không làm thay đổi mảng gọi nó).
        2. ```javascript
           var arr1 = ["Xử", "lý", "chuỗi"];
           var arr2 = ["trong", "JS"];
@@ -156,7 +156,7 @@
 
    14. **slice()**
 
-       1. Hàm dùng để lấy một số phần tử con trong mảng
+       1. Hàm dùng để lấy một số phần tử con trong mảng.
        2. ```javascript
           var arr = ["Xử", "lý", "chuỗi", "trong", "JS"];
           arr.slice(3, 5); //["trong", "JS"];
@@ -167,7 +167,7 @@
 
    15. **join()**
 
-       1. Tạo ra một chuỗi mới bằng cách nối tất cả các phần tử của mảng
+       1. Tạo ra một chuỗi mới bằng cách nối tất cả các phần tử của mảng.
        2. ```javascript
           var arr = ["Xử", "lý", "chuỗi", "trong", "JS"];
           arr.join(); //"Xử,lý,chuỗi,trong,JS"
