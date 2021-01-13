@@ -76,6 +76,7 @@
 </details>
 
 6. <details><summary><b>Phân biệt các giá trị của Position<b></summary>
+  
    1. **static**
       1. Là giá trị mặc định của position
    2. **Relative**
@@ -100,6 +101,7 @@
 </details>
 
 8. <details><summary><b>Overflow <b></summary>
+  
    1. **text-overflow**
       1. `text-overflow: clip` đoạn văn bản overflow sẽ bị ẩn đi.
       2. `text-overflow: ellipsis` phần bị ẩn đi sẽ được thay thế bằng dấu '3 chấm'
