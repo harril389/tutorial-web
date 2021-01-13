@@ -31,7 +31,7 @@
     
    </details>
      
-   1. **Map**
+   1. ##**Map**
       1. Xử lý từng biến trong một mảng theo cùng 1 cách, trả về các giá trị sau xử lý bằng đúng số lượng phần tử ban đầu
       2. Hàm `map()` nhận vào 3 tham số (theo thứ tự):
          - Phần tử hiện tại của mảng.
@@ -42,7 +42,7 @@
            return animal.name;
          });
          ```
-   2. **Filter**
+   2. ##**Filter**
 
       1. Lấy các phần tử trong mảng theo một tiêu chuẩn nhất định
       2. Hàm `Filter()` nhận vào 3 tham số (theo thứ tự):
