@@ -27,9 +27,9 @@
    1. **Map**
       1. Xử lý từng biến trong một mảng theo cùng 1 cách, trả về các giá trị sau xử lý bằng đúng số lượng phần tử ban đầu
       2. Hàm map() nhận vào 3 tham số (theo thứ tự):
-         1. Phần tử hiện tại của mảng.
-         2. Chỉ số của phần tử hiện tại trong mảng.
-         3. Mảng ban đầu.
+         * Phần tử hiện tại của mảng.
+         * Chỉ số của phần tử hiện tại trong mảng.
+         * Mảng ban đầu.
       3. ```javascript
          let animal_names = animals.map((animal, index, animals) => {
            return animal.name;
