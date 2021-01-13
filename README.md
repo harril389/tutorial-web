@@ -129,12 +129,12 @@
          a.toUpperCase(); //HARRII
          ```
    10. **toLowerCase()**
-   11. Phương thức này có tác dụng chuyển đổi chuỗi thành chuỗi thường.
-   12. ```javascript
-       string.toLowerCase();
-       var a = "HARRII";
-       a.toLowerCase(); //harrii
-       ```
+       1. Phương thức này có tác dụng chuyển đổi chuỗi thành chuỗi thường.
+       2. ```javascript
+          string.toLowerCase();
+          var a = "HARRII";
+          a.toLowerCase(); //harrii
+          ```
 
 </details>
 
