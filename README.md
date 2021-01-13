@@ -23,7 +23,14 @@
 ## JS
 
 1. <details><summary><b>Xử lý mảng trong JS<b></summary>
-
+   <details><summary><b>Menu<b></summary>
+     
+    1. [Map](#map)
+    2. [Filter](#filter)
+    3. [Reduce](#reduce)
+    
+   </details>
+     
    1. **Map**
       1. Xử lý từng biến trong một mảng theo cùng 1 cách, trả về các giá trị sau xử lý bằng đúng số lượng phần tử ban đầu
       2. Hàm `map()` nhận vào 3 tham số (theo thứ tự):
