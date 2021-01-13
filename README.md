@@ -203,7 +203,7 @@
     2. [indexOf()](#indexOf)
     3. [lastIndexOf()](#lastIndexOf)
     4. [Search()](#Search)
-    5. [slice()](#slice)
+    5. [slice()](#slice-1)
     6. [substring()](#substring)
     7. [substr()](#substr)
     8. [replace()](#replace)
