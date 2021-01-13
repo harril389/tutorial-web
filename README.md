@@ -79,5 +79,5 @@
       2. Vị trí của chúng **CHỈ** tương quan với thẻ \<html>
       3. Chúng không bị ảnh hưởng bới scroll
    5. **Sticky**
-      1. Là sự kết hợp của position: relative và position: fixed.
-      2. Khi scroll đến vị trí của nó sẽ giống hệt như fixed và khi scroll ra khỏi nó thì nó sẽ quay lại vị trí ban đầu dưới dạng relative.
+      1. Là sự kết hợp của `position: relative` và `position: fixed`.
+      2. Khi scroll đến vị trí của nó sẽ giống hệt như `fixed` và khi scroll ra khỏi nó thì nó sẽ quay lại vị trí ban đầu dưới dạng `relative`.
