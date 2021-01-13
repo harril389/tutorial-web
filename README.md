@@ -26,21 +26,43 @@
 
    1. **Map**
       1. Xử lý từng biến trong một mảng theo cùng 1 cách, trả về các giá trị sau xử lý bằng đúng số lượng phần tử ban đầu
-      2. Hàm map() nhận vào 3 tham số (theo thứ tự):
-         * Phần tử hiện tại của mảng.
-         * Chỉ số của phần tử hiện tại trong mảng.
-         * Mảng ban đầu.
+      2. Hàm `map()` nhận vào 3 tham số (theo thứ tự):
+         - Phần tử hiện tại của mảng.
+         - Chỉ số của phần tử hiện tại trong mảng.
+         - Mảng ban đầu.
       3. ```javascript
          let animal_names = animals.map((animal, index, animals) => {
            return animal.name;
          });
          ```
-   2. **Block**
-      1. Luôn được xuống dòng và chiếm toàn bộ `width` nếu width không được set.
-   3. **Inline-block**
-      1. Sẽ được sắp xếp giống với kiểu `display: inline` nghĩa là các items sẽ được xếp cùng nhau trên một dòng . Tuy nhiên các items sẽ có thuộc tính của `display: block` như là có set `width, height, margin, padding` đủ 4 hướng.
+   2. **Filter**
+      1. Lấy các phần tử trong mảng theo một tiêu chuẩn nhất định
+      2. Hàm `Filter()` nhận vào 3 tham số (theo thứ tự):
+         - Phần tử hiện tại của mảng.
+         - Chỉ số của phần tử hiện tại trong mảng.
+         - Mảng ban đầu.
+      3. ```javascript
+         let small_animals = animals.filter((animal) => {
+           return animal.size === "small";
+         });
+         ```
+   3. **Reduce**
+      1. Hàm `reduce` sẽ biến đổi một mảng thành một giá trị đơn giản.
+      2. Hàm `reduce` sẽ thực hiện một hàm được cung cấp cho mỗi giá trị của mảng, từ trái qua phải.
+      3. Hàm sẽ trả về một kết quả được lưu trữ( tổng số hoặc kết quả tính toàn).
+      4. Hàm `reduce` sẽ không thực hiện hàm được cung cấp đối với các phần tử không có giá trị.
+      5. Hàm `reduce()` nhận vào 3 tham số (theo thứ tự):
+         - Tham số đầu tiên là giá trị khởi tạo. Ta cần set giá trị khởi tạo ở cuối hàm. Trong ví dụ dưới là `0`. Nó có thể là bất cứ giá trị nào.
+         - Tham số thứ 2 là phần tử hiện tại trong mảng.
+         - Tham số thứ 3 và 4 giống với 2 hàm kể trên.
+      6. ```javascript
+         let total_weight = animals.reduce((weight, animal, index, animals) => {
+           return (weight += animal.weight);
+         }, 0);
+         ```
 
 </details>
+
 2. Item 2
 3. Item 3
    1. Item 3a
