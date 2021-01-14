@@ -412,7 +412,7 @@
 ## Regex
 
 Tham khảo tại: [xuanthulab.net](https://xuanthulab.net/bieu-thuc-chinh-quy-regexp.html).
-Kiểm tra và viết biểu thức chính quy: [xuanthulab.net](https://xuanthulab.net/cong-cu-kiem-tra-va-viet-bieu-thuc-bat-chinh-quy-regexp.html?regexp)
+Kiểm tra và viết biểu thức chính quy: [xuanthulab.net](https://xuanthulab.net/cong-cu-kiem-tra-va-viet-bieu-thuc-bat-chinh-quy-regexp.html?regexp).
 
 1. <details><summary><b>Các ký tự biểu diễn<b></summary>
 
