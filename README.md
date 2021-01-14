@@ -198,7 +198,7 @@
                   arr.join("-"); //Xử-lý-chuỗi-trong-JS"
                   ```
 
-        Lên đầu[Table of Contents](#table-of-contents)&#8683;
+[Table of Contents](#table-of-contents) &#8683;
 
 </details>
 
