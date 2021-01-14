@@ -435,12 +435,22 @@
    | Flag |                        Detail                         |
    | ---- | :---------------------------------------------------: |
    | .    | Biểu diễn bất kỳ ký tự nào ngoại trừ ký tự xuống dòng |
-   | \w   |   Chữ,số, và &#95;, tương đương với: [a-zA-Z0-9_]   |
+   | \w   |     Chữ,số, và \_ , tương đương với: [a-zA-Z0-9_]     |
    | \W   |      Ngoài bảng chữ cái, tương đương với: [^\w]       |
    | \d   |                     Các số: [0-9]                     |
    | \D   |               Lặp lại 1 hoặc nhiều lần                |
    | ?    |                 Không phải số: [^\d]                  |
    | \s   |   Là ký tự trắng, tương đương với: [\t\n\f\r\p{Z}]    |
    | \S   |             Không phải ký tự trắng: [^\s]             |
+
+</details>
+
+3. <details><summary><b>Các cờ<b></summary>
+
+   | Flag |                    Detail                    |
+   | ---- | :------------------------------------------: |
+   | i    | Thiết lập không phân biệt chữ hoa chữ thường |
+   | g    |             Tìm kiếm toàn chuỗi.             |
+   | m    |                 Tìm đa dòng.                 |
 
 </details>
