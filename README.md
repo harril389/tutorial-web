@@ -427,5 +427,5 @@
    | \   |   Biểu diễn ký tự đặc biệt [ ] ( ) { } . * + ? ^ $ \ &#124;  |
    | ^   |   Điểm bắt đầu của dòng  |
    | $   |   Điểm kết thúc của dòng  |
-
+   
 </details>
