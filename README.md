@@ -422,7 +422,7 @@
    | +     |   Lặp lại 1 hoặc nhiều lần   |
    | ?    |   Tùy chọn có hay không cho mẫu phía trước  |
    | {n,m}     |   Độ dài tối thiểu là n tối đa là m   |
-   | (xyz)     |  Biểu diễn một nhóm   |
+   | (xyz)     |  Biểu diễn một nhóm mẫu  |
    | &#124;   |   Biểu diễn thay thế, phép toán `or`  |
    | \   |   Biểu diễn ký tự đặc biệt [ ] ( ) { } . * + ? ^ $ \ &#124;  |
    | ^   |   Điểm bắt đầu của dòng  |
