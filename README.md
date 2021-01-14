@@ -11,6 +11,7 @@
 1. [ReactJS](#reactjs)
 2. [JS](#js)
 3. [CSS](#css)
+4. [Regex](#regex)
 
 ## ReactJS
 
@@ -405,5 +406,17 @@
       1. Thuộc tính cho phép điều khiển nội dung bị tràn theo chiều ngang (nghĩa là bên trái `left` và bên phải `right` của phần tử). Tương tự thuộc tính `overflow`, thuộc tính `overflow-x` cũng có giá trị như `visible, hidden, auto, scroll`.
    4. **Overflow-y**
       1. Thuộc tính cho phép điều khiển nội dung bị tràn theo chiều dọc (nghĩa là bên trên `top` và bên dưới `bottom` của phần tử). Tương tự thuộc tính `overflow`, thuộc tính `overflow-y` cũng có giá trị như `visible, hidden, auto, scroll`.
+
+</details>
+
+## Regex
+
+1. <details><summary><b>Các ký tự biểu diễn<b></summary>
+
+   | Left columns | Right columns |
+   | ------------ | :-----------: |
+   | left foo     |   right foo   |
+   | left bar     |   right bar   |
+   | left baz     |   right baz   |
 
 </details>
