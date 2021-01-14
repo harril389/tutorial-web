@@ -435,7 +435,7 @@
    | Flag |                        Detail                         |
    | ---- | :---------------------------------------------------: |
    | .    | Biểu diễn bất kỳ ký tự nào ngoại trừ ký tự xuống dòng |
-   | \w   |   Chữ,số, và &#8211;, tương đương với: [a-zA-Z0-9_]   |
+   | \w   |   Chữ,số, và &#8212;, tương đương với: [a-zA-Z0-9_]   |
    | \W   |      Ngoài bảng chữ cái, tương đương với: [^\w]       |
    | \d   |                     Các số: [0-9]                     |
    | \D   |               Lặp lại 1 hoặc nhiều lần                |
