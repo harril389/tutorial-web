@@ -428,20 +428,27 @@
    | ^      |                      Điểm bắt đầu của dòng                      |
    | $      |                     Điểm kết thúc của dòng                      |
 
+   1. Ký tự `.`
+      1. Ký hiệu dấu chấm `.` là một meta đơn giản, nó biểu diễn bất kỳ ký tự nào ngoài trừ ký tự `return \r` hoặc `newline \n`. Ví dụ biểu thức `.oàn` thì có nghĩa là: một ký tự nào đó, tiếp theo đến ký tự `o`, tiếp theo đến `à` cuối cùng là `n`. Ví dụ dùng mẫu đó tìm trong chuỗi.
+      ```
+         `.oàn` =>Sự `hoàn` hảo dường như không thể đạt được, nhưng nếu chúng ta theo đuổi sự `hoàn` hảo
+         thì chúng ta sẽ chạm đến sự xuất sắc.
+      ```
+
 </details>
 
 2. <details><summary><b>Ký hiệu tắt cho tập hợp<b></summary>
 
-   | Flag |                        Detail                         |
-   | ---- | :---------------------------------------------------: |
-   | .    | Biểu diễn bất kỳ ký tự nào ngoại trừ ký tự xuống dòng |
-   | \w   |     Chữ,số, và \_ , tương đương với: [a-zA-Z0-9_]     |
-   | \W   |      Ngoài bảng chữ cái, tương đương với: [^\w]       |
-   | \d   |                     Các số: [0-9]                     |
-   | \D   |               Lặp lại 1 hoặc nhiều lần                |
-   | ?    |                 Không phải số: [^\d]                  |
-   | \s   |   Là ký tự trắng, tương đương với: [\t\n\f\r\p{Z}]    |
-   | \S   |             Không phải ký tự trắng: [^\s]             |
+   | acronym |                        Detail                         |
+   | ------- | :---------------------------------------------------: |
+   | .       | Biểu diễn bất kỳ ký tự nào ngoại trừ ký tự xuống dòng |
+   | \w      |     Chữ,số, và \_ , tương đương với: [a-zA-Z0-9_]     |
+   | \W      |      Ngoài bảng chữ cái, tương đương với: [^\w]       |
+   | \d      |                     Các số: [0-9]                     |
+   | \D      |               Lặp lại 1 hoặc nhiều lần                |
+   | ?       |                 Không phải số: [^\d]                  |
+   | \s      |   Là ký tự trắng, tương đương với: [\t\n\f\r\p{Z}]    |
+   | \S      |             Không phải ký tự trắng: [^\s]             |
 
 </details>
 
