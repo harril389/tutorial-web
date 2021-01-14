@@ -431,10 +431,19 @@ Tham khảo tại: [xuanthulab.net](https://xuanthulab.net/bieu-thuc-chinh-quy-r
    | $      |                     Điểm kết thúc của dòng                      |
 
    1. Ký tự `.`
+
       1. Ký hiệu dấu chấm `.` là một meta đơn giản, nó biểu diễn bất kỳ ký tự nào ngoài trừ ký tự `return \r` hoặc `newline \n`. Ví dụ biểu thức `.oàn` thì có nghĩa là: một ký tự nào đó, tiếp theo đến ký tự `o`, tiếp theo đến `à` cuối cùng là `n`. Ví dụ dùng mẫu đó tìm trong chuỗi.
+
       ```
          `.oàn` =>Sự `hoàn` hảo dường như không thể đạt được, nhưng nếu chúng ta theo đuổi sự `hoàn` hảo
          thì chúng ta sẽ chạm đến sự xuất sắc.
+      ```
+
+   2. Tập hợp ký tự `[]`
+      1. Dùng `[]` để chứa tập hợp các ký tự. Có thể dùng dấu `-` để biểu diễn một dải các ký tự theo vị trí trong bảng chữ cái như `a-z`, `0-9` ..., biểu thức so sánh sẽ hợp mẫu nếu chứa bất kỳ ký tự nào trong đó (không cần quan tâm thứ tự)
+      2. Ví dụ biểu thức `[ưƯ]`ớc có nghĩa là: Có một chữ `ư` hoặc `Ư`, theo sau bởi `ớ`, tiếp theo là `c`
+      ```
+         `[ưƯ]ớc` => `Ước` một điều ... mộng `ước` rất đơn sơ. Nụ hôn trao hạnh phút đến bất ngờ
       ```
 
 </details>
@@ -459,7 +468,7 @@ Tham khảo tại: [xuanthulab.net](https://xuanthulab.net/bieu-thuc-chinh-quy-r
    | Flag |                    Detail                    |
    | ---- | :------------------------------------------: |
    | i    | Thiết lập không phân biệt chữ hoa chữ thường |
-   | g    |             Tìm kiếm toàn chuỗi.             |
-   | m    |                 Tìm đa dòng.                 |
+   | g    |             Tìm kiếm toàn chuỗi              |
+   | m    |                 Tìm đa dòng                  |
 
 </details>
