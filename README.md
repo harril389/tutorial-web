@@ -584,9 +584,9 @@ Kiểm tra và viết biểu thức chính quy: [xuanthulab.net](https://xuanthu
    | g    |             Tìm kiếm toàn chuỗi              |
    | m    |                 Tìm đa dòng                  |
 
-Các cờ này được đưa vào mẫu theo dạng `/RegExp/flags`.
+    Các cờ này được đưa vào mẫu theo dạng `/RegExp/flags`.
 
-- `/The/gi` => `The` fat cat sat on `the` mat.
-- `/.(at)/` => The `fat` cat sat on the mat.
-- `/.(at)/g` => The `fat` `cat` `sat` on the `mat`.
+    - `/The/gi` => `The` fat cat sat on `the` mat.
+    - `/.(at)/` => The `fat` cat sat on the mat.
+    - `/.(at)/g` => The `fat` `cat` `sat` on the `mat`.
 </details>
