@@ -461,8 +461,8 @@ Kiểm tra và viết biểu thức chính quy: [xuanthulab.net](https://xuanthu
    4. Lặp lại với ký tự `*`
 
       1. Ký hiệu `*` cho biết có sự lặp lại `0` hoặc nhiều lần mẫu phù hợp đứng phía trước nó. Ví dụ mẫu `a*` có nghĩa là ký tự `a` lặp lại `0` hoặc `nhiều lần` là phù hợp. Nếu nó đi sau tập hợp thì lặp tập hợp đó lặp lại `0` hoặc `nhiều lần`. ví dụ `[a-z]*` có nghĩa là dòng có số lượng bất kỳ các ký tự chữ viết thường thì phù hợp.
-         - có thế sử dụng với `.` để biểu diễn bất kỳ chuỗi nào, hay dùng mẫu `(.*)`
-         - có thể sử dụng với ký tự trắng `\s` để biểu diễn bất kỳ `khoảng trắng` nào.
+         - Có thế sử dụng với `.` để biểu diễn bất kỳ chuỗi nào, hay dùng mẫu `(.*)`.
+         - Có thể sử dụng với ký tự trắng `\s` để biểu diễn bất kỳ `khoảng trắng` nào.
       2. Ví dụ `\s*mình\s*` có nghĩa bắt đầu bởi không hoặc nhiều khoảng trắng, tiếp theo là ký tự` m, ì, n, h` tiếp theo là không hoặc nhiều khoảng trắng.
 
       ```
