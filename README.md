@@ -413,19 +413,34 @@
 
 1. <details><summary><b>Các ký tự biểu diễn<b></summary>
 
-   | Flag | Detail |
-   | ------------ | :-----------: |
-   | .     |   Biểu diễn bất kỳ ký tự nào ngoại trừ ký tự xuống dòng   |
+   | Flag   |                             Detail                              |
+   | ------ | :-------------------------------------------------------------: |
+   | .      |      Biểu diễn bất kỳ ký tự nào ngoại trừ ký tự xuống dòng      |
    | []     |   Tập hợp ký tự. Phù hợp nếu có bất kỳ ký tự nào trong dấu []   |
-   | [^ ]    |   Tập hợp ký tự phủ định. Phù hợp nếu không có ký tự nào trong []   |
-   | *    |   Lặp lại 0 đến nhiều lần  |
-   | +     |   Lặp lại 1 hoặc nhiều lần   |
-   | ?    |   Tùy chọn có hay không cho mẫu phía trước  |
-   | {n,m}     |   Độ dài tối thiểu là n tối đa là m   |
-   | (xyz)     |  Biểu diễn một nhóm mẫu  |
-   | &#124;   |   Biểu diễn thay thế, phép toán `or`  |
-   | \   |   Biểu diễn ký tự đặc biệt [ ] ( ) { } . * + ? ^ $ \ &#124;  |
-   | ^   |   Điểm bắt đầu của dòng  |
-   | $   |   Điểm kết thúc của dòng  |
-   
+   | [^ ]   | Tập hợp ký tự phủ định. Phù hợp nếu không có ký tự nào trong [] |
+   | \*     |                     Lặp lại 0 đến nhiều lần                     |
+   | +      |                    Lặp lại 1 hoặc nhiều lần                     |
+   | ?      |            Tùy chọn có hay không cho mẫu phía trước             |
+   | {n,m}  |                Độ dài tối thiểu là n tối đa là m                |
+   | (xyz)  |                     Biểu diễn một nhóm mẫu                      |
+   | &#124; |               Biểu diễn thay thế, phép toán `or`                |
+   | \      |   Biểu diễn ký tự đặc biệt [ ] ( ) { } . \* + ? ^ $ \ &#124;    |
+   | ^      |                      Điểm bắt đầu của dòng                      |
+   | $      |                     Điểm kết thúc của dòng                      |
+
+</details>
+
+2. <details><summary><b>Ký hiệu tắt cho tập hợp<b></summary>
+
+   | Flag |                        Detail                         |
+   | ---- | :---------------------------------------------------: |
+   | .    | Biểu diễn bất kỳ ký tự nào ngoại trừ ký tự xuống dòng |
+   | \w   |   Chữ,số, và &#8210;, tương đương với: [a-zA-Z0-9_]   |
+   | \W   |      Ngoài bảng chữ cái, tương đương với: [^\w]       |
+   | \d   |                     Các số: [0-9]                     |
+   | \D   |               Lặp lại 1 hoặc nhiều lần                |
+   | ?    |                 Không phải số: [^\d]                  |
+   | \s   |   Là ký tự trắng, tương đương với: [\t\n\f\r\p{Z}]    |
+   | \S   |             Không phải ký tự trắng: [^\s]             |
+
 </details>
