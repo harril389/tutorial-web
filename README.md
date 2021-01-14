@@ -413,10 +413,19 @@
 
 1. <details><summary><b>Các ký tự biểu diễn<b></summary>
 
-   | Left columns | Right columns |
+   | Flag | Detail |
    | ------------ | :-----------: |
-   | left foo     |   right foo   |
-   | left bar     |   right bar   |
-   | left baz     |   right baz   |
+   | .     |   Biểu diễn bất kỳ ký tự nào ngoại trừ ký tự xuống dòng   |
+   | []     |   Tập hợp ký tự. Phù hợp nếu có bất kỳ ký tự nào trong dấu []   |
+   | [^ ]    |   Tập hợp ký tự phủ định. Phù hợp nếu không có ký tự nào trong []   |
+   | *    |   Lặp lại 0 đến nhiều lần  |
+   | +     |   Lặp lại 1 hoặc nhiều lần   |
+   | ?    |   Tùy chọn có hay không cho mẫu phía trước  |
+   | {n,m}     |   Độ dài tối thiểu là n tối đa là m   |
+   | (xyz)     |  Biểu diễn một nhóm   |
+   | &#124;   |   Biểu diễn thay thế, phép toán `or`  |
+   | \   |   Biểu diễn ký tự đặc biệt [ ] ( ) { } . * + ? ^ $ \ &#124;  |
+   | ^   |   Điểm bắt đầu của dòng  |
+   | $   |   Điểm kết thúc của dòng  |
 
 </details>
