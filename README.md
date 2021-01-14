@@ -411,6 +411,8 @@
 
 ## Regex
 
+Tham khảo tại: [xuanthulab.net](https://xuanthulab.net/bieu-thuc-chinh-quy-regexp.html).
+
 1. <details><summary><b>Các ký tự biểu diễn<b></summary>
 
    | Flag   |                             Detail                              |
