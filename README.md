@@ -412,6 +412,7 @@
 ## Regex
 
 Tham khảo tại: [xuanthulab.net](https://xuanthulab.net/bieu-thuc-chinh-quy-regexp.html).
+Kiểm tra và viết biểu thức chính quy: [xuanthulab.net](https://xuanthulab.net/cong-cu-kiem-tra-va-viet-bieu-thuc-bat-chinh-quy-regexp.html?regexp)
 
 1. <details><summary><b>Các ký tự biểu diễn<b></summary>
 
@@ -440,11 +441,81 @@ Tham khảo tại: [xuanthulab.net](https://xuanthulab.net/bieu-thuc-chinh-quy-r
       ```
 
    2. Tập hợp ký tự `[]`
+
       1. Dùng `[]` để chứa tập hợp các ký tự. Có thể dùng dấu `-` để biểu diễn một dải các ký tự theo vị trí trong bảng chữ cái như `a-z`, `0-9` ..., biểu thức so sánh sẽ hợp mẫu nếu chứa bất kỳ ký tự nào trong đó (không cần quan tâm thứ tự)
       2. Ví dụ biểu thức `[ưƯ]`ớc có nghĩa là: Có một chữ `ư` hoặc `Ư`, theo sau bởi `ớ`, tiếp theo là `c`
+      3. Nếu `[]` chứa `.` thì nó biểu diễn ký tự `.` chứ không con ý nghĩa đại diện như trường hợp trên.
+
       ```
          `[ưƯ]ớc` => `Ước` một điều ... mộng `ước` rất đơn sơ. Nụ hôn trao hạnh phút đến bất ngờ
       ```
+
+   3. Tập hợp ngoại trừ `[^]`
+
+      1. Thông thường thì `^` biểu diễn điểm bắt đầu của chuỗi, tuy nhiên nếu nó nằm ở vị trí sau dấu `[` của cặp `[]` thì nó lại mang ý nghĩa tạo ra tập hợp ký tự loại trừ (phụ định). Ví dụ biểu thức `[^n]`hanh có nghĩa là bất kỳ ký tự nào ngoại trừ ký tự `n`, theo sau bởi `h`, tiếp theo bởi `a`, `n` và `h`
+
+      ```
+         `[^n]hanh` => Thời gian cứ thế xoay vòng thật nhanh. Bao mùa chiếc áo phông `phanh`!
+      ```
+
+   4. Lặp lại với ký tự `*`
+
+      1. Ký hiệu `*` cho biết có sự lặp lại `0` hoặc nhiều lần mẫu phù hợp đứng phía trước nó. Ví dụ mẫu `a*` có nghĩa là ký tự `a` lặp lại `0` hoặc `nhiều lần` là phù hợp. Nếu nó đi sau tập hợp thì lặp tập hợp đó lặp lại `0` hoặc `nhiều lần`. ví dụ `[a-z]*` có nghĩa là dòng có số lượng bất kỳ các ký tự chữ viết thường thì phù hợp.
+         - có thế sử dụng với `.` để biểu diễn bất kỳ chuỗi nào, hay dùng mẫu `(.*)`
+         - có thể sử dụng với ký tự trắng `\s` để biểu diễn bất kỳ `khoảng trắng` nào.
+      2. Ví dụ `\s*mình\s*` có nghĩa bắt đầu bởi không hoặc nhiều khoảng trắng, tiếp theo là ký tự` m, ì, n, h` tiếp theo là không hoặc nhiều khoảng trắng.
+
+      ```
+         `\s*mình\s*` => Đừng so sánh mình với bất cứ ai trong thế giới này.
+         Nếu bạn làm như vậy có nghĩa bạn đang sỉ nhục chính bản thân `mình`. Bill Gates
+      ```
+
+   5. Lặp lại với ký tự `+`
+
+      1. Ký hiệu `+` tương tự như `*` nhưng lặp lại `1` hoặc `nhiều`. Ví dụ: `có.+!` có nghĩa ký tự bắt đầu bằng `có` theo sau ít nhất một ký tự nào đó, tiếp theo là ký tự `!`.
+
+      ```
+         `có.+!` => Đàn ông cần tiền chủ yếu chỉ để cho hai việc: `có được nàng và thoát được nàng!`.
+      ```
+
+   6. Mẫu phía trước có hay không đều được với `?`
+
+      1. Trong biểu thức Regex thông thường `?` là một tùy chọn cho biết mẫu phía trước nó có thể có hoặc không. Ví dụ `[h]?ôn` nghĩa là tùy chọn có `h` hoặc `không`, theo sau là `ô`, tiếp theo là `n`
+
+      ```
+         `[h]?ôn` => Đàn bà k`hôn` ngoan hơn đàn `ông` vì họ biết ít hơn, nhưng hiểu nhiều hơn.
+      ```
+
+   7. Biểu diễn độ dài `{}`
+
+      1. `{}` là biểu diễn `số lượng`, nó chỉ ra số lần mà một ký tự hoặc một nhóm các ký tự lặp lại.
+      2. Ví dụ `[0-9]{2,3}` có nghĩa là có tối thiểu `2` tới `3` ký tự số.
+      3. Bạn có thể bỏ đi số thứ `2`, ví dụ `[0-9]{2,}` có nghĩa là chuỗi có `2` hoặc `nhiều ký tự số`. Nếu bỏ đi ký tự `,` ví dụ `[0-9]{3}` có nghĩa là chuỗi chính xác có `3 ký tự`.
+
+   8. Nhóm mẫu `(...)` và biểu diễn thay thế `|`
+
+      1. Nhóm ký tự là một mẫu `(pattern)` con được viết biên trong `()`. Ví dụ `(ab)*` lặp lại `ab` `0` hoặc `nhiều lần`. Chúng ta cũng dùng ký hiệu `|` bên trong nhóm như là phép toán `or` để xác định nhóm. Ví dụ `n(g|h)` có nghĩa bắt đầu bằng n theo sau là một mẫu, mẫu đó hoặc là chữ `g` hoặc là chữ `h`
+
+      ```
+         `n(g|h)` =>Nếu có một ai đó làm chậm bước chân của bạn, hãy `nh`ẹ `nh`à`ng` rẽ sa`ng` hướ`ng` khác.
+      ```
+
+   9. Biểu diễn ký tự đặc biệt với `\`
+
+      1. Do một số ký hiệu đã được dùng đã biểu diễn Regex như : `{ } [ ] / \ + * . $ ^ | ?` nên để biểu diễn các ký tự đó dùng ký hiệu `\` trước ký tự.
+
+      ```
+         "(f|c|m)at\.?" => The `fat` `cat` sat on the `mat.`
+      ```
+
+   10. Bắt đầu của dòng `^`
+
+       1. Sử dụng `^` để cho biết sẽ kiểm tra sự phù hợp nếu ký tự đầu tiên của chuỗi hợp mẫu. Ví dụ `^a` thì chuỗi phù hợp có dạng như `abcxyz`, nếu vẫn chuỗi đó nó lại không phù hợp với `^b`.
+       2. `^(T|t)he` có nghĩa là `T` hoặc `t` bắt đầu của chuỗi, theo sau là `he`.
+
+   11. Điểm kết thúc của chuỗi `$`
+       1. Cho biết kết thúc dòng phải thỏa mãn mẫu phía trước `$`.
+       2. Ngược lại với `^` ví dụ `(at\.)$` nghĩa là cuối chuỗi có `at.` thì là phù hợp. `(at\.)$` => The fat cat. sat. on the m`at.`
 
 </details>
 
