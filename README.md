@@ -540,7 +540,7 @@ Kiểm tra và viết biểu thức chính quy: [xuanthulab.net](https://xuanthu
 
       1. Lookahead `?=` cho thêm vào để lọc kết quả.
       2. Ký hiệu `?=` Phần đầu của biểu thức phải được tiếp nối bởi biểu thức `lookahead`.
-      3. Ví dụ `(T|t)he(?=\sfat)` thì `lookahead` là `(?=\sfat)` - nghĩa là `T` hoặc `t` theo sau là `he` vậy tìm được 2 kết quả. Nhưng do có biểu thức `lookahead`, điều này thì kết quả phù hợp là chỉ lấy khi theo sau nó là chuỗi `fat`
+      3. Ví dụ `(T|t)he(?=\sfat)` thì `lookahead` là `(?=\sfat)` - nghĩa là `T` hoặc `t` theo sau là `he` vậy tìm được 2 kết quả. Nhưng do có biểu thức `lookahead`, điều này thì kết quả phù hợp là chỉ lấy khi theo sau nó là chuỗi `fat`.
 
       ```
          (T|t)he => `The` fat cat sat on `the` mat.
@@ -552,7 +552,7 @@ Kiểm tra và viết biểu thức chính quy: [xuanthulab.net](https://xuanthu
 
    2. Biểu thức `?!` phủ định lookahead
 
-      1. Ký hiệu `?!`, nghĩa là lấy kết quả mà đi sau nó không có chuỗi `lookahead`
+      1. Ký hiệu `?!`, nghĩa là lấy kết quả mà đi sau nó không có chuỗi `lookahead`.
 
       ```
          (T|t)he(?!\sfat) => The fat cat sat on `the` mat.
@@ -560,7 +560,7 @@ Kiểm tra và viết biểu thức chính quy: [xuanthulab.net](https://xuanthu
 
    3. Biểu thức `(?<=...)` Lookbehind
 
-      1. Sử dụng để lấy các phù hợp mà đi trước là một mẫu cũ thể. `(?<=(T|t)he\s)(fat|mat)` có nghĩa lấy tất cả các từ `fat` hoặc `mat` sau các từ `The` hoặc `the`
+      1. Sử dụng để lấy các phù hợp mà đi trước là một mẫu cũ thể. `(?<=(T|t)he\s)(fat|mat)` có nghĩa lấy tất cả các từ `fat` hoặc `mat` sau các từ `The` hoặc `the`.
 
       ```
          (?<=(T|t)he\s)(fat|mat) => The `fat` cat sat on the `mat`.
@@ -584,4 +584,9 @@ Kiểm tra và viết biểu thức chính quy: [xuanthulab.net](https://xuanthu
    | g    |             Tìm kiếm toàn chuỗi              |
    | m    |                 Tìm đa dòng                  |
 
+Các cờ này được đưa vào mẫu theo dạng `/RegExp/flags`.
+
+- `/The/gi` => `The` fat cat sat on `the` mat.
+- `/.(at)/` => The `fat` cat sat on the mat.
+- `/.(at)/g` => The `fat` `cat` `sat` on the `mat`.
 </details>
