@@ -319,6 +319,8 @@
            str.split(" "); //["Xử", "lý", "chuỗi", "trong", "JS"]
            ```
 
+    [Table of Contents](#table-of-contents) &#8683;
+
 </details>
 
 3. Item 3
@@ -521,6 +523,8 @@ Kiểm tra và viết biểu thức chính quy: [xuanthulab.net](https://xuanthu
    11. Điểm kết thúc của chuỗi `$`
        1. Cho biết kết thúc dòng phải thỏa mãn mẫu phía trước `$`.
        2. Ngược lại với `^` ví dụ `(at\.)$` nghĩa là cuối chuỗi có `at.` thì là phù hợp. `(at\.)$` => The fat cat. sat. on the m`at.`
+
+   [Table of Contents](#table-of-contents) &#8683;
 
 </details>
 
