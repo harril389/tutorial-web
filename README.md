@@ -534,7 +534,49 @@ Kiểm tra và viết biểu thức chính quy: [xuanthulab.net](https://xuanthu
 
 </details>
 
-3. <details><summary><b>Các cờ<b></summary>
+3. <details><summary><b>Các biểu thức look...<b></summary>
+
+   1. Biểu thức `?=` lookahead
+
+      1. Lookahead `?=` cho thêm vào để lọc kết quả.
+      2. Ký hiệu `?=` Phần đầu của biểu thức phải được tiếp nối bởi biểu thức `lookahead`.
+      3. Ví dụ `(T|t)he(?=\sfat)` thì `lookahead` là `(?=\sfat)` - nghĩa là `T` hoặc `t` theo sau là `he` vậy tìm được 2 kết quả. Nhưng do có biểu thức `lookahead`, điều này thì kết quả phù hợp là chỉ lấy khi theo sau nó là chuỗi `fat`
+
+      ```
+         (T|t)he => `The` fat cat sat on `the` mat.
+      ```
+
+      ```
+         `(T|t)he(?=\sfat)` => `The` fat cat sat on the mat.
+      ```
+
+   2. Biểu thức `?!` phủ định lookahead
+
+      1. Ký hiệu `?!`, nghĩa là lấy kết quả mà đi sau nó không có chuỗi `lookahead`
+
+      ```
+         (T|t)he(?!\sfat) => The fat cat sat on `the` mat.
+      ```
+
+   3. Biểu thức `(?<=...)` Lookbehind
+
+      1. Sử dụng để lấy các phù hợp mà đi trước là một mẫu cũ thể. `(?<=(T|t)he\s)(fat|mat)` có nghĩa lấy tất cả các từ `fat` hoặc `mat` sau các từ `The` hoặc `the`
+
+      ```
+         (?<=(T|t)he\s)(fat|mat) => The `fat` cat sat on the `mat`.
+      ```
+
+   4. Biểu thức `(?<!...)` phủ định Lookbehind
+
+      1. Sử dụng để lấy các phù hợp mà đi trước không có một mẫu `lookbehind` chỉ ra.
+
+      ```
+         `(?<!(T|t)he\s)(cat)` => The cat sat on cat.
+      ```
+
+</details>
+
+4. <details><summary><b>Các cờ<b></summary>
 
    | Flag |                    Detail                    |
    | ---- | :------------------------------------------: |
