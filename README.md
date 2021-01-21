@@ -57,16 +57,16 @@
              ```
        2. ## **Filter**
 
-    1.  Lấy các phần tử trong mảng theo một tiêu chuẩn nhất định
-    2.  Hàm `Filter()` nhận vào 3 tham số (theo thứ tự):
-        - Phần tử hiện tại của mảng.
-        - Chỉ số của phần tử hiện tại trong mảng.
-        - Mảng ban đầu.
-    3.  ```javascript
-        let small_animals = animals.filter((animal) => {
-          return animal.size === "small";
-        });
-        ```
+          1.  Lấy các phần tử trong mảng theo một tiêu chuẩn nhất định
+          2.  Hàm `Filter()` nhận vào 3 tham số (theo thứ tự):
+              - Phần tử hiện tại của mảng.
+              - Chỉ số của phần tử hiện tại trong mảng.
+              - Mảng ban đầu.
+          3.  ```javascript
+              let small_animals = animals.filter((animal) => {
+                return animal.size === "small";
+              });
+              ```
 
     4.  ## **Reduce**
 
